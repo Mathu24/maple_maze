@@ -17,8 +17,13 @@ body::before {
 }
 
 .title {
-  display: block !important;
-  font-family: Calibri;
+  display: flex;
+  justify-content: center;
+  font-family: "Calibri", sans-serif;
   font-weight: bold;
+  color: #FF7A66;
+  text-transform: uppercase;
+  font-size: 40px;
+  margin-top: 45px;
 }
 
