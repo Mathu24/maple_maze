@@ -1,0 +1,60 @@
+.title {
+  display: flex;
+  justify-content: center;
+  font-family: "Calibri", sans-serif;
+  font-weight: bold;
+  color: #FF7A66;
+  text-transform: uppercase;
+  font-size: 40px;
+  margin-top: 45px;
+}
+
+.buttonStart {
+  font-family: "Calibri", sans-serif;
+  background-color: #6B3018;
+  color: #E9D8C6;
+  padding: 15px 32px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 26px;
+  cursor: pointer;
+  border: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 28px;
+  position: absolute;
+  top: 515px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.buttonLeaderboard {
+  font-family: "Calibri", sans-serif;
+  background-color: #6B3018;
+  color: #E9D8C6;
+  padding: 15px 32px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 21px;
+  cursor: pointer;
+  border: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 28px;
+  position: absolute;
+  top: 589px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 127px;
+  left: 12px;
+  width: 335px;
+  height: 600px;
+  background-color: #F2EAE2;
+  border-radius: 20px; // Adjust the border-radius as needed for rounded edges
+  z-index: -1;
+}

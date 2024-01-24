@@ -4,26 +4,4 @@ body {
   padding: 0; // Optional: Remove default body padding
 }
 
-body::before {
-  content: '';
-  position: fixed;
-  top: 127px;
-  left: 12px;
-  width: 335px;
-  height: 600px;
-  background-color: #F2EAE2;
-  border-radius: 20px; // Adjust the border-radius as needed for rounded edges
-  z-index: -1;
-}
-
-.title {
-  display: flex;
-  justify-content: center;
-  font-family: "Calibri", sans-serif;
-  font-weight: bold;
-  color: #FF7A66;
-  text-transform: uppercase;
-  font-size: 40px;
-  margin-top: 45px;
-}
 
