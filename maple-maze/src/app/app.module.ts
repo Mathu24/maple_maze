@@ -3,19 +3,19 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { CameraComponent } from './camera/camera.component';
+import { ImageUploadComponent } from './camera/camera.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CameraComponent
+    ImageUploadComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [ImageUploadComponent]
 
 })
 export class AppModule { }

@@ -1,29 +1,23 @@
 import { Component } from '@angular/core';
-import { Camera, CameraResultType } from '@capacitor/camera';
+import { CameraResultType, CameraSource } from '@capacitor/core';
+
+const { Camera } = Plugins;
 
 @Component({
-  selector: 'app-camera',
-  templateUrl: './camera.component.html',
-  styleUrls: ['./camera.component.scss']
+  selector: 'app-photo-capture',
+  templateUrl: './photo-capture.component.html',
+  styleUrls: ['./photo-capture.component.css']
 })
-export class CameraComponent {
+export class PhotoCaptureComponent {
+  capturedImage: string | undefined;
 
+  async capturePhoto() {
+    const image = await Camera.getPhoto({
+      resultType: CameraResultType.Uri,
+      source: CameraSource.Camera,
+      quality: 100
+    });
 
-const takePicture = async () => {
-  const image = await Camera.getPhoto({
-    quality: 90,
-    allowEditing: true,
-    resultType: CameraResultType.Uri
-  });
-
-  // image.webPath will contain a path that can be set as an image src.
-  // You can access the original file using image.path, which can be
-  // passed to the Filesystem API to read the raw data of the image,
-  // if desired (or pass resultType: CameraResultType.Base64 to getPhoto)
-  var imageUrl = image.webPath;
-
-  // Can be set to the src of an image now
-  imageElement.src = imageUrl;
-};
-
+    this.capturedImage = image.webPath;
+  }
 }
