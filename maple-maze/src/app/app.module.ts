@@ -5,6 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { CameraComponent } from './camera/camera.component';
+import { ComponentNameComponent } from './component-name/component-name.component';
+import { GeolocationComponent } from './geolocation/geolocation.component';
 
 
 @NgModule({
@@ -12,6 +14,8 @@ import { CameraComponent } from './camera/camera.component';
     AppComponent,
     HomeComponent,
     CameraComponent,
+    ComponentNameComponent,
+    GeolocationComponent,
   ],
 
   imports: [

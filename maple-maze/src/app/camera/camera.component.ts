@@ -15,7 +15,7 @@ export class CameraComponent {
     try {
       const image = await Camera.getPhoto({
         quality: 90,
-        allowEditing: true,
+        allowEditing: false,
         resultType: CameraResultType.Uri
       });
 
