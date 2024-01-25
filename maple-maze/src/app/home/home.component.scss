@@ -11,9 +11,9 @@
 
 .buttonStart {
   font-family: "Calibri", sans-serif;
-  background-color: #6B3018;
-  color: #E9D8C6;
-  padding: 15px 32px;
+  background-color: #E9D8C6;
+  color: #6B3018;
+  padding: 15px 64px;
   text-decoration: none;
   display: inline-block;
   font-size: 26px;
@@ -30,16 +30,15 @@
 
 .buttonLeaderboard {
   font-family: "Calibri", sans-serif;
-  background-color: #6B3018;
-  color: #E9D8C6;
-  padding: 15px 32px;
+  background-color: #E9D8C6;
+  color: #6B3018;
+  padding: 18px 42px;
   text-decoration: none;
   display: inline-block;
   font-size: 21px;
   cursor: pointer;
   border: none;
   font-weight: bold;
-  text-transform: uppercase;
   border-radius: 28px;
   position: absolute;
   top: 589px;
@@ -54,7 +53,7 @@ body::before {
   left: 12px;
   width: 335px;
   height: 600px;
-  background-color: #F2EAE2;
+  background-color: #6B3018;
   border-radius: 20px; // Adjust the border-radius as needed for rounded edges
   z-index: -1;
 }

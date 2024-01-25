@@ -10,4 +10,8 @@ export class HomeComponent {
   startButtonClick(): void {
     console.log('Start button clicked!');
   }
+
+  leaderboardButtonClick(): void {
+    console.log('Start button clicked!');
+  }
 }
