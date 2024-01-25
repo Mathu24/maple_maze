@@ -1,1 +1,6 @@
-<p>camera works!</p>
+<!-- camera.component.html -->
+
+<button (click)="takePicture()">Bild aufnehmen</button>
+
+<!-- Hier können Sie das Bild anzeigen -->
+<img *ngIf="imageUrl" [src]="imageUrl" alt="Aufgenommenes Bild">
